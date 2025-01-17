@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Blog Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header>
+      <h1>BlogHub</h1>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <!-- Blog Writing Section -->
+      <div id="blog-section">
+        <form id="blog-form">
+          <input type="text" id="username" placeholder="Enter your name" required>
+          <textarea id="blog-content" placeholder="Write your blog here..." required></textarea>
+          <select id="text-style">
+            <option value="normal">Normal</option>
+            <option value="bold">Bold</option>
+            <option value="italic">Italic</option>
+            <option value="underline">Underline</option>
+          </select>
+          <button type="submit">Save Blog</button>
+        </form>
+      </div>
+
+      <!-- Blog Display Section -->
+      <div id="blog-display">
+        <h2>Recent Blogs</h2>
+        <div id="blogs"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
